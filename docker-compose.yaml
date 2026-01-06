@@ -79,6 +79,8 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs://home/papalio/airflow-docker/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config://home/papalio/airflow-docker/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins://home/papalio/airflow-docker/plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/img://home/papalio/airflow-docker/img
+    - ${AIRFLOW_PROJ_DIR:-.}/data://home/papalio/airflow-docker/data
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
